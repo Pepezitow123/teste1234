@@ -1,5 +1,5 @@
 /* ------------------------------
-   ESTILOS GERAIS
+   ESTILO GERAL
 ------------------------------ */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -27,7 +27,7 @@ header h1 {
 }
 
 /* ------------------------------
-   MENU DE NAVEGAÇÃO
+   MENU
 ------------------------------ */
 nav ul {
     list-style: none;
@@ -55,7 +55,7 @@ nav a:hover {
 ------------------------------ */
 .secao {
     padding: 50px 20px;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -63,13 +63,34 @@ nav a:hover {
     color: #e68a00;
     border-left: 5px solid #e68a00;
     padding-left: 10px;
+    margin-bottom: 10px;
 }
 
-.secao img {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
+.secao p {
+    text-align: justify;
+}
+
+/* ------------------------------
+   GALERIA DE IMAGENS
+------------------------------ */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
     border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 /* ------------------------------
@@ -119,7 +140,7 @@ footer {
         margin: 8px 0;
     }
 
-    .secao {
-        padding: 30px 15px;
+    .galeria img {
+        height: 180px;
     }
 }
