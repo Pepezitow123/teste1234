@@ -1,0 +1,125 @@
+/* ------------------------------
+   ESTILOS GERAIS
+------------------------------ */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffdf7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ------------------------------
+   CABEÇALHO
+------------------------------ */
+header {
+    background: linear-gradient(90deg, #ffb347, #ffcc33);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+/* ------------------------------
+   MENU DE NAVEGAÇÃO
+------------------------------ */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------------
+   SEÇÕES
+------------------------------ */
+.secao {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.secao h2 {
+    color: #e68a00;
+    border-left: 5px solid #e68a00;
+    padding-left: 10px;
+}
+
+.secao img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* ------------------------------
+   LISTA DE ESTADOS
+------------------------------ */
+.lista-estados {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.lista-estados li {
+    background-color: #fff5e1;
+    border: 1px solid #ffd580;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #555;
+}
+
+/* ------------------------------
+   RODAPÉ
+------------------------------ */
+footer {
+    background-color: #ffcc33;
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+
+/* ------------------------------
+   RESPONSIVIDADE
+------------------------------ */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .secao {
+        padding: 30px 15px;
+    }
+}
